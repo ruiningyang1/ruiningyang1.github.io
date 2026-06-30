@@ -22,8 +22,8 @@ discovered and weaponized.
 
 ## News
 
-- **[Jun. 2026]** Our paper on security hardening adoption in Infrastructure as Code is accepted to PST 2026.
-- **[Jun. 2026]** I am presenting DependoScope at ACM CODASPY 2026 in Frankfurt.
+- **[Jun. 2026]** One paper accepted at PST 2026.
+- **[Mar. 2026]** One paper accepted at CODASPY 2026.
 
 {% include_relative _includes/publications.md %}
 

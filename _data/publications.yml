@@ -21,8 +21,9 @@ main:
     pdf: /publication/2026_codaspy_infrastructure.pdf
     bibtex_text: |
       @inproceedings{yang2026infrastructure,
-        title     = {Infrastructure as Compromise: Abusing Residual Trust in Infrastructure as Code Tools},
-        author    = {Yang, Ruining and Chaiwut, Narong and Nikiforakis, Nikolaos},
-        booktitle = {Proceedings of the Sixteenth ACM Conference on Data and Application Security and Privacy (CODASPY)},
-        year      = {2026}
+        title={Infrastructure as Compromise: Abusing Residual Trust in Infrastructure as Code Tools},
+        author={Yang, Ruining and Chaiwut, Narong and Nikiforakis, Nick},
+        booktitle={Proceedings of the Sixteenth ACM Conference on Data and Application Security and Privacy},
+        pages={126--137},
+        year={2026}
       }

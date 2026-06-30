@@ -5,14 +5,6 @@ main:
     conference_short: PST
     conference: International Conference on Privacy, Security and Trust <strong>(PST)</strong>, 2026.
     notes: To appear
-    bibtex_text: |
-      @inproceedings{yang2026measuring,
-        title     = {Measuring Security Hardening Adoption in Infrastructure as Code: An Empirical Study of Public Repositories},
-        author    = {Yang, Ruining and Nikiforakis, Nikolaos},
-        booktitle = {Proceedings of the International Conference on Privacy, Security and Trust (PST)},
-        year      = {2026},
-        note      = {To appear}
-      }
 
   - title: "Infrastructure as Compromise: Abusing Residual Trust in Infrastructure as Code Tools"
     authors: <strong>Ruining Yang</strong>, Narong Chaiwut, Nick Nikiforakis

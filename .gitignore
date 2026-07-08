@@ -6,3 +6,6 @@ Gemfile.lock
 .jekyll-cache
 git-update.sh
 .claude/
+vendor/
+.bundle/
+preview.sh

@@ -22,6 +22,7 @@ discovered and weaponized.
 
 ## News
 
+- **[Jul. 2026]** Recognized as a **Distinguished Artifact Reviewer** at PETS 2026.
 - **[Jun. 2026]** One paper accepted at PST 2026.
 - **[Mar. 2026]** One paper accepted at CODASPY 2026.
 

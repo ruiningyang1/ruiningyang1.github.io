@@ -5,7 +5,7 @@ layout: homepage
 ## About Me
 
 I am a third-year Ph.D. student in Computer Science at Stony Brook University,
-where I am a member of the [PragSec Lab](https://www.pragsec.com/) and advised by
+where I am a member of the PragSec Lab and advised by
 Prof. [Nick Nikiforakis](https://securitee.org/). My research is in systems and
 network security, with a focus on the security of Infrastructure as Code (IaC),
 software supply chains, and credential leakage in the wild.
@@ -22,6 +22,7 @@ discovered and weaponized.
 
 ## News
 
+- **[Aug. 2026]** One paper accepted at ICICS 2026.
 - **[Jul. 2026]** Recognized as a **Distinguished Artifact Reviewer** at PETS 2026.
 - **[Jun. 2026]** One paper accepted at PST 2026.
 - **[Mar. 2026]** One paper accepted at CODASPY 2026.

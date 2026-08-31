@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.title }} — {{ page.venue }}. By {{ page.authors_display }}.">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+    <!-- Google Scholar / Highwire Press metadata.
+         Scholar reads these tags first, which is why this landing page exists:
+         it does not have to parse the title and authors out of the PDF. -->
+    <meta name="citation_title" content="{{ page.title }}">
+    {%- for a in page.citation_authors %}
+    <meta name="citation_author" content="{{ a }}">
+    {%- endfor %}
+    <meta name="citation_publication_date" content="{{ page.citation_date }}">
+    {%- if page.citation_conference %}
+    <meta name="citation_conference_title" content="{{ page.citation_conference }}">
+    {%- endif %}
+    {%- if page.citation_dissertation_institution %}
+    <meta name="citation_dissertation_institution" content="{{ page.citation_dissertation_institution }}">
+    {%- endif %}
+    {%- if page.citation_publisher %}
+    <meta name="citation_publisher" content="{{ page.citation_publisher }}">
+    {%- endif %}
+    {%- if page.citation_firstpage %}
+    <meta name="citation_firstpage" content="{{ page.citation_firstpage }}">
+    <meta name="citation_lastpage" content="{{ page.citation_lastpage }}">
+    {%- endif %}
+    {%- if page.citation_doi %}
+    <meta name="citation_doi" content="{{ page.citation_doi }}">
+    {%- endif %}
+    {%- if page.pdf %}
+    <meta name="citation_pdf_url" content="{{ page.pdf | absolute_url }}">
+    {%- endif %}
+
+    <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ '/assets/img/favicon-dark.png' | relative_url }}" type="image/png">
+    <link rel="icon" media="(prefers-color-scheme:light)" href="{{ '/assets/img/favicon.png' | relative_url }}" type="image/png">
+    <link rel="stylesheet" href="{{ '/assets/css/font.css' | relative_url }}">
+
+    <style>
+      /* Self-contained single-column article page. Colors mirror the theme
+         (light: #595959 on #fff, headings #043361, links #39c). */
+      body { margin: 0; }
+      .paper { max-width: 720px; margin: 0 auto; padding: 3em 20px 60px; }
+      .paper .back { font-size: 14px; }
+      .paper h1 { font-size: 26px; font-weight: 500; color: #043361; line-height: 1.25; margin: 18px 0 12px; }
+      .paper h2 { font-size: 19px; font-weight: 600; color: #043361; margin: 28px 0 8px; }
+      .paper .authors { font-size: 17px; margin: 0 0 4px; }
+      .paper .venue { font-style: italic; margin: 0 0 4px; }
+      .paper .status { color: #e74d3c; font-style: italic; font-size: 15px; }
+      .paper a { color: #39c; text-decoration: none; }
+      .paper a:hover { color: #069; }
+      .paper .links { margin: 18px 0 0; }
+      .paper .links a, .paper .links span {
+        display: inline-block; font-size: 13px; padding: 3px 10px; margin: 0 6px 6px 0;
+        border: 1px solid #d7d7d7; border-radius: 4px;
+      }
+      .paper .links span { color: #999; border-style: dashed; }
+      .paper details { margin-top: 18px; }
+      .paper summary { cursor: pointer; font-size: 14px; }
+      .paper pre {
+        background: #f5f5f5; border: 1px solid #ccc; border-radius: 6px;
+        padding: 10px; overflow-x: auto; font: 13px/1.45 Ubuntu Mono, monospace;
+      }
+      .paper hr { border: 0; height: 1px; background: #e5e5e5; margin: 26px 0 18px; }
+      .paper .cite-line { font-size: 14px; color: #777; }
+      @media (prefers-color-scheme: dark) {
+        body { background-color: #20212b; color: #dadbdf; }
+        .paper h1, .paper h2 { color: rgb(62, 183, 240); }
+        .paper a { color: rgb(62, 183, 240); }
+        .paper .links a, .paper .links span { border-color: #3a3c4a; }
+        .paper pre { background: #2a2b36; border-color: #3a3c4a; }
+        .paper hr { background: #3a3c4a; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="paper">
+      <div class="back"><a href="{{ '/' | relative_url }}">&larr; {{ site.title }}</a></div>
+
+      <h1>{{ page.title }}</h1>
+      <p class="authors">{{ page.authors_display }}</p>
+      <p class="venue">{{ page.venue }}</p>
+      {%- if page.status %}
+      <p class="status">{{ page.status }}</p>
+      {%- endif %}
+
+      <div class="links">
+        {%- if page.pdf %}
+        <a href="{{ page.pdf | relative_url }}">PDF</a>
+        {%- else %}
+        <span>PDF not yet posted</span>
+        {%- endif %}
+        {%- if page.citation_doi %}
+        <a href="https://doi.org/{{ page.citation_doi }}">DOI</a>
+        {%- endif %}
+        {%- if page.code %}
+        <a href="{{ page.code }}">Code</a>
+        {%- endif %}
+      </div>
+
+      {{ content }}
+
+      {%- if page.bibtex %}
+      <details>
+        <summary>BibTeX</summary>
+        <pre>{{ page.bibtex }}</pre>
+      </details>
+      {%- endif %}
+
+      <hr>
+      <p class="cite-line">{{ page.authors_display }}. {{ page.title }}. <em>{{ page.venue }}</em>.</p>
+      {%- if page.rights %}
+      <p class="cite-line">{{ page.rights }}</p>
+      {%- endif %}
+    </div>
+  </body>
+</html>

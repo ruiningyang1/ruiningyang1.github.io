@@ -1,15 +1,31 @@
 main:
 
+  - title: "When Secrets Get Committed: The Role of Code Platforms in Avoiding Secret Leakage"
+    authors: <strong>Ruining Yang</strong>, Billy Tsouvalas, Nick Nikiforakis
+    conference_short: ICICS
+    conference: International Conference on Information and Communications Security <strong>(ICICS)</strong>, 2026.
+    notes: To appear
+
   - title: "Measuring Security Hardening Adoption in Infrastructure as Code: An Empirical Study of Public Repositories"
     authors: <strong>Ruining Yang</strong>, Nick Nikiforakis
     conference_short: PST
     conference: International Conference on Privacy, Security and Trust <strong>(PST)</strong>, 2026.
-    notes: To appear
+    landing: /publication/2026-pst-measuring/
+    pdf: /publication/2026_pst_measuring.pdf
+    bibtex_text: |
+      @inproceedings{yang2026measuring,
+        title={Measuring Security Hardening Adoption in Infrastructure as Code: An Empirical Study of Public Repositories},
+        author={Yang, Ruining and Nikiforakis, Nick},
+        booktitle={Proceedings of the 23rd Annual International Conference on Privacy, Security and Trust (PST)},
+        year={2026},
+        organization={IEEE}
+      }
 
   - title: "Infrastructure as Compromise: Abusing Residual Trust in Infrastructure as Code Tools"
     authors: <strong>Ruining Yang</strong>, Narong Chaiwut, Nick Nikiforakis
     conference_short: CODASPY
     conference: ACM Conference on Data and Application Security and Privacy <strong>(CODASPY)</strong>, 2026.
+    landing: /publication/2026-codaspy-infrastructure/
     pdf: /publication/2026_codaspy_infrastructure.pdf
     bibtex_text: |
       @inproceedings{yang2026infrastructure,
@@ -17,7 +33,8 @@ main:
         author={Yang, Ruining and Chaiwut, Narong and Nikiforakis, Nick},
         booktitle={Proceedings of the Sixteenth ACM Conference on Data and Application Security and Privacy},
         pages={126--137},
-        year={2026}
+        year={2026},
+        doi={10.1145/3800506.3803500}
       }
 
   - title: "User Perception of Login Notification Emails"

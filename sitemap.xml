@@ -1,0 +1,23 @@
+---
+# Hand-rolled so the site stays plugin-free (no jekyll-sitemap dependency).
+# Lists every rendered HTML page plus the PDFs, which is what Google and
+# Google Scholar crawl.
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in site.pages %}
+{%- assign ext = p.name | split: '.' | last %}
+{%- if ext == 'md' or ext == 'html' %}
+  <url>
+    <loc>{{ p.url | replace: 'index.html', '' | absolute_url }}</loc>
+  </url>
+{%- endif %}
+{%- endfor %}
+{%- for f in site.static_files %}
+{%- if f.extname == '.pdf' %}
+  <url>
+    <loc>{{ f.path | absolute_url }}</loc>
+  </url>
+{%- endif %}
+{%- endfor %}
+</urlset>

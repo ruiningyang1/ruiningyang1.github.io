@@ -10,6 +10,9 @@ email: ruiniyang (at) cs.stonybrook.edu
 keywords: Ruining Yang, Infrastructure as Code security, supply chain security, credential leakage, honeypot, PragSec Lab, Stony Brook University
 description: Ruining Yang is a Ph.D. student at Stony Brook University (PragSec Lab), working on Infrastructure as Code security, supply chain attacks, and credential leakage.
 canonical: https://ruiningyang.com/
+# Site root. Required so that absolute URLs (Google Scholar's citation_pdf_url,
+# <link rel=canonical> on paper pages, sitemap.xml) resolve correctly.
+url: https://ruiningyang.com
 
 # Links
 # If you don't need one of them, you may delete the corresponding line.

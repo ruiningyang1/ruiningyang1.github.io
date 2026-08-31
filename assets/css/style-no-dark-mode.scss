@@ -2,3 +2,15 @@
 ---
 
 @import "minimal-light-no-dark-mode";
+
+// Larger profile photo. The theme draws the avatar at 45% width with 20px of
+// padding inside the circular clip, which leaves the actual photo around 58px
+// wide. A fixed size with no padding lets the photo fill the circle; the
+// margin replaces the vertical breathing room that the padding used to give.
+// 160px is the largest size that stays sharp on a 2x display with the current
+// 320x320 avatar.jpg.
+.image.avatar img {
+  width: 160px;
+  padding: 0;
+  margin-bottom: 0.8em;
+}

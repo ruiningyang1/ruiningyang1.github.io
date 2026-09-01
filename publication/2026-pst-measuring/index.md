@@ -9,7 +9,6 @@ citation_date: "2026/08/26"
 citation_conference: "23rd Annual International Conference on Privacy, Security and Trust (PST)"
 citation_publisher: "IEEE"
 venue: "23rd Annual International Conference on Privacy, Security and Trust (PST), Ottawa, Canada, 2026"
-status: "Presented August 2026. IEEE Xplore listing expected around December 2026."
 # Author's accepted version, not the PDF from IEEE Xplore.
 pdf: /publication/2026_pst_measuring.pdf
 # citation_doi: 10.1109/...                 # fill in once the paper is in IEEE Xplore

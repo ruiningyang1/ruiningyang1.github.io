@@ -6,9 +6,9 @@ layout: homepage
 
 I am a fourth-year Ph.D. student in Computer Science at Stony Brook University,
 where I am a member of the PragSec Lab and advised by
-Prof. [Nick Nikiforakis](https://securitee.org/). My research is in systems and
-network security, with a focus on the security of Infrastructure as Code (IaC),
-software supply chains, and credential leakage in the wild.
+Prof. [Nick Nikiforakis](https://securitee.org/). My research focuses on the
+security of Infrastructure as Code (IaC), software supply chains, and credential
+leakage in the wild.
 
 I build measurement studies and tools that uncover how attackers abuse trust in
 modern infrastructure tooling, and how secrets exposed in public repositories are

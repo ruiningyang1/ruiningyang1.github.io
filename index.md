@@ -10,10 +10,6 @@ Prof. [Nick Nikiforakis](https://securitee.org/). My research focuses on the
 security of Infrastructure as Code (IaC), software supply chains, and credential
 leakage in the wild.
 
-I build measurement studies and tools that uncover how attackers abuse trust in
-modern infrastructure tooling, and how secrets exposed in public repositories are
-discovered and weaponized.
-
 ## Research Interests
 
 - **Infrastructure as Code security:** residual trust, remote-reference hijacking, security hardening adoption

@@ -4,7 +4,7 @@ layout: homepage
 
 ## About Me
 
-I am a third-year Ph.D. student in Computer Science at Stony Brook University,
+I am a fourth-year Ph.D. student in Computer Science at Stony Brook University,
 where I am a member of the PragSec Lab and advised by
 Prof. [Nick Nikiforakis](https://securitee.org/). My research is in systems and
 network security, with a focus on the security of Infrastructure as Code (IaC),

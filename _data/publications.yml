@@ -4,7 +4,17 @@ main:
     authors: <strong>Ruining Yang</strong>, Billy Tsouvalas, Nick Nikiforakis
     conference_short: ICICS
     conference: International Conference on Information and Communications Security <strong>(ICICS)</strong>, 2026.
-    notes: To appear
+    landing: /publication/2026-icics-secrets/
+    pdf: /publication/2026_icics_secrets.pdf
+    bibtex_text: |
+      @inproceedings{yang2026secrets,
+        title={When Secrets Get Committed: The Role of Code Platforms in Avoiding Secret Leakage},
+        author={Yang, Ruining and Tsouvalas, Billy and Nikiforakis, Nick},
+        booktitle={Proceedings of the 28th International Conference on Information and Communications Security (ICICS)},
+        pages={259--279},
+        year={2026},
+        publisher={Springer}
+      }
 
   - title: "Measuring Security Hardening Adoption in Infrastructure as Code: An Empirical Study of Public Repositories"
     authors: <strong>Ruining Yang</strong>, Nick Nikiforakis
